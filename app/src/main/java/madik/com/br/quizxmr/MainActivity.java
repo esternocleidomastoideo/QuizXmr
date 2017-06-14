@@ -120,9 +120,6 @@ public class MainActivity extends AppCompatActivity {
                     arrayBooleano[4] = jsonObject.getInt("r5bool");
                     arrayBooleano[5] = jsonObject.getInt("r6bool");
 
-
-
-
                     handler.post(new Runnable() {
                         @Override
                         public void run() {
@@ -143,8 +140,6 @@ public class MainActivity extends AppCompatActivity {
                             int progress2= Math.round(progress*100);
                             progressbar.setProgress(progress2);
 
-
-
                             listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
 
@@ -160,7 +155,6 @@ public class MainActivity extends AppCompatActivity {
                                             Toast.makeText(MainActivity.this, msg_correta, Toast.LENGTH_SHORT).show();
                                         }else{
                                             Toast.makeText(MainActivity.this, msg_incorreta, Toast.LENGTH_SHORT).show();
-                                            
                                         }
                                     }
 
